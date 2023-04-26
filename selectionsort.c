@@ -32,13 +32,13 @@ int main()
 }
 
 // selection sort
-void selectionsort(int arr[],int size)
+void selectionsort(int arr[])
 {
     int min,i,j,temp;
-    for(i=0;i<size-1;i++)
+    for(i=0;i<4;i++)
     {
         min=i;
-        for(j=i+1;j<size;j++)
+        for(j=i+1;j<5;j++)
         {
             if(arr[min]>arr[j])
             {
@@ -51,6 +51,7 @@ void selectionsort(int arr[],int size)
         arr[i]=arr[min];
         arr[min]=temp;
     }
+}
 
 int binarysearch(int arr[], int num)
 {
